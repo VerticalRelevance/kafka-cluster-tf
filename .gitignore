@@ -45,3 +45,4 @@ terraform.rc
 terraform.tfstate
 terraform.tfstate.backup
 .terraform/
+kafka-key.pem
