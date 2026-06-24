@@ -65,7 +65,7 @@ resource "aws_codepipeline" "codepipeline" {
 
       configuration = {
         ConnectionArn    = var.codestar_connection_arn
-        FullRepositoryId = "FilipeBPires/kafka-cluster-tf"
+        FullRepositoryId = "VerticalRelevance/kafka-cluster-tf"
         BranchName       = "main"
       }
     }
