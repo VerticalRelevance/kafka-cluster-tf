@@ -7,6 +7,11 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+  bucket = "kafka-tf-state-899456967600"
+  key    = "terraform.tfstate"
+  region = "us-east-2"
+}
 }
 
 provider "aws" {
