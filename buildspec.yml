@@ -10,7 +10,7 @@ phases:
     commands:
       - terraform init 
       - terraform plan -var="key_pair_name=kafka-key"
-  post-build:
+  post_build:
     commands:
       - terraform apply -auto-approve -var="key_pair_name=kafka-key"
 
