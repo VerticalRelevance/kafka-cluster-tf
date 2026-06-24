@@ -20,3 +20,8 @@ variable "key_pair_name" {
   description = "Name of an existing EC2 key pair for SSH access"
   type        = string
 }
+
+variable "codestar_connection_arn" {
+  description = "ARN of the CodeStar connection to GitHub"
+  type        = string
+}
