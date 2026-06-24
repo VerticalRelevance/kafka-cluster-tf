@@ -24,4 +24,5 @@ variable "key_pair_name" {
 variable "codestar_connection_arn" {
   description = "ARN of the CodeStar connection to GitHub"
   type        = string
+   default     = "arn:aws:codeconnections:us-east-2:899456967600:connection/4bf85604-5fdc-47cb-b2c9-5ba0627899d3"
 }
