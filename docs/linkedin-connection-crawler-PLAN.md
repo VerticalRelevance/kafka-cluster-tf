@@ -5,6 +5,18 @@
 
 ---
 
+## Decisions locked (2026-06-25)
+
+| Question | Choice |
+|----------|--------|
+| Automation level | **Human-in-the-loop** — system ranks 50 + drafts messages; you click to send from a real session |
+| Data source | **Licensed provider** (People Data Labs / Apollo / Proxycurl via swappable connector) — no scraping |
+| Hosting | **AWS serverless** (EventBridge + Step Functions + Lambda + DynamoDB), Terraform'd in this repo |
+
+These map to Tier B discovery + Tier C human send below. Phase 0 scaffold lives under `app/`.
+
+---
+
 ## 0. Read this first — compliance shapes everything
 
 LinkedIn's User Agreement prohibits scraping and unauthorized automated access, and

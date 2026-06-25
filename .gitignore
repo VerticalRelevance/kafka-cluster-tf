@@ -46,3 +46,9 @@ terraform.tfstate
 terraform.tfstate.backup
 .terraform/
 kafka-key.pem
+
+# LinkedIn finder app
+app/.data/
+app/**/__pycache__/
+infra-linkedin/build/
+infra-linkedin/.terraform/
